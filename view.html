@@ -1,0 +1,28 @@
+<!DOCTYPE html>  
+ <html>   
+ <body>  
+ <h3>სიახლეები</h3>   
+ <table border=5>  
+ <thead>  
+ <td>ნომერი</td>  
+ <td>სათაური</td>  
+ <td>აღწერა</td>   
+ <td>კატეგორია</td>
+ <td>თარიღი</td>
+ <td>ავტორი</td>  
+ </thead>  
+ {% for row in rows %}  
+ <tr>  
+ <td>{{row["id"]}}</td>  
+ <td>{{row["a"]}}</td>  
+ <td>{{row["b"]}}</td>  
+ <td>{{row["c"]}}</td>
+ <td>{{row["d"]}}</td>
+ <td>{{row["e"]}}</td>  
+ </tr>  
+ {% endfor %}   
+ </table>  
+ <br><br>  
+ <a href="/">საწყის გვერდზე დაბრუნება</a>  
+ </body>  
+ </html> 
